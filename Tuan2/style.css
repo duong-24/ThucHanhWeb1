@@ -1,0 +1,30 @@
+#khung{
+    width: 300px;
+    border: 1px solid;
+    margin: auto;
+}
+
+#head{
+    width: 100%;
+    text-align: center;
+    background-color: coral;
+    color:saddlebrown;
+    font-size: 25px;
+}
+
+#content{
+    width: 100%;
+    background-color: burlywood;
+}
+
+.left{
+    width: 40%;
+}
+
+.right{
+    width: 60%;
+}
+
+#mix{
+    text-align: center;
+}

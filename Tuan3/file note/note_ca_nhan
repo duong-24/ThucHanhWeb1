@@ -1,0 +1,55 @@
+<?php 
+    class Tuan3 {
+        function Pheptinh($a,$b,$pheptinh)
+        {
+            switch($pheptinh){
+                case "cong": return $a+$b;
+                case "tru": return $a-$b;
+                case "nhan": return $a*$b;
+                case "chia": return $a/$b;
+            }
+        }
+        function Kiemtraso($a)
+        {
+            if(!is_numeric($a)){
+                echo "<script>alert('Nhập sai')</script>";
+                return false;
+            }else
+                return true;
+        }
+        function Kiemtrachia0($a,$pheptinh)
+        {
+            if($a==0 && $pheptinh=="chia"){
+                echo "<script>alert('Không thể chia cho số 0')</script>";
+                return false;
+            }else
+                return true;
+        }
+        function Tinhtong($n)
+        {
+            $tong = 0;
+            $chuoi = "";
+            for($i=1; $i<$n; $i++){
+                $tong += $i;
+                if ($i==$n)
+                    $chuoi .= "$i = ";
+                else
+                    $chuoi .= "$i + ";
+            }
+            return $chuoi.$tong;
+        }
+        function Tinhgiaithua($n)
+        {
+            $tich = 1;
+            $chuoi = "";
+            for($i=1; $i<=$n; $i++){
+                $tich *= $i;
+                if ($i==$n)
+                    $chuoi .= "$i = ";
+                else
+                    $chuoi .= "$i *";
+            }
+            return $chuoi.$tich;
+        }
+    }
+?>
